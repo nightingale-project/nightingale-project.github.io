@@ -27,9 +27,11 @@ jobs:
             # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
             package-manager: npm # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
       - name: install
+        working-directory: ./theme
         run: npm install
 
       - name: start
+        working-directory: ./theme
         run: npm start
 
   deploy:
