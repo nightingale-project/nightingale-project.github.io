@@ -1,5 +1,5 @@
 ---
-import { Container, FeatureCard, StickyTextImageSection} from '@littlesticks/odyssey-theme-components';
+import { Container, FeatureCard, StickyTextImageSection, YouTubeEmbedSection} from '@littlesticks/odyssey-theme-components';
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
@@ -7,6 +7,8 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 
 <Layout>
 	<HomeHeroSection />
+	<h2 style={{textAlign: 'center'}}>Watch our Video! </h2>
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=Rx3ZUtp12tc&ab_channel=Nightingale" rounded />
 	<Container>
 		<section class="feature-card__section">
 			<h2>Why Florence? Why Now?</h2>
